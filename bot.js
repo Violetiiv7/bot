@@ -52,16 +52,15 @@ client.on("messageCreate", (message) => {
             salvarDados();
             message.reply(
                 "📢 **A contagem foi reiniciada para os próximos 15 dias!**",
-            );
+             );
         }
-          }
+    }
 
     // ✅ NOVO BLOCO ADICIONADO PARA RESET MANUAL
     if (resposta === "reset") {
         respostas = [];
         salvarDados();
         message.reply("🔁 Contagem manualmente reiniciada!");
-     }
     }
 });
 
